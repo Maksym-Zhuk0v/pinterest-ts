@@ -1,0 +1,76 @@
+@import "/src/styles/vars";
+
+.main {
+	width: 100%;
+	margin-top: 12px;
+	position: relative;
+	min-height: 800px;
+}
+
+.arrowBack {
+	width: 48px;
+	height: 48px;
+	position: fixed;
+	top: 98px;
+	left: 18px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&:hover {
+		background-color: $shaodw-color-lighter;
+	}
+}
+
+.arrow {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-top: 4px solid #000;
+	border-right: 4px solid #000;
+	border-radius: 3px;
+	transform: rotate(225deg);
+}
+
+.ZoomedCard {
+	width: 65%;
+	background-color: $primery-color;
+	min-height: 450px;
+	margin: 0 auto;
+	box-shadow: 0 0 12px $shaodw-color-lighter;
+	border-radius: 24px;
+	overflow: hidden;
+}
+
+.infoZoomed {
+	width: 45%;
+	display: flex;
+	justify-content: center;
+	padding: 0 16px;
+	@media screen and (max-width: $tablet-width) {
+		width: calc(100% - 32px);
+	}
+}
+
+.card {
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+	@media screen and (max-width: $tablet-width) {
+		display: block;
+	}
+}
+
+.imgBlock {
+	width: 55%;
+	max-height: 1550px;
+	border-top-left-radius: 24px;
+	border-bottom-left-radius: 24px;
+	@media screen and (max-width: $tablet-width) {
+		width: 100%;
+	}
+}
+
+.img {
+	width: 100%;
+}

@@ -1,0 +1,19 @@
+.myInput {
+	width: calc(100% - 24px);
+	padding: 12px;
+	border-radius: 20px;
+	font-size: 16px;
+	color: black;
+	border: 2px solid rgb(157, 157, 157);
+	&:hover {
+		border: 2px solid rgb(104, 104, 104);
+	}
+	&:focus {
+		border: 5px solid rgba(0, 157, 255, 0.459);
+		border-radius: 26px;
+		width: calc(100% - 36px);
+	}
+	&::placeholder {
+		color: rgb(157, 157, 157);
+	}
+}

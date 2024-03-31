@@ -1,0 +1,57 @@
+@import "/src/styles/vars";
+
+.main {
+	position: fixed;
+	width: 330px;
+	height: calc(100vh - 98px);
+	background-color: $primery-color;
+	padding: 16px;
+	border-radius: 16px;
+	box-shadow: 0 0 5px$shaodw-color-darken;
+	right: 0;
+	z-index: 3;
+	overflow-y: auto;
+}
+
+.theme {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+	padding: 8px;
+	border-radius: 16px;
+	margin-top: 8px;
+	position: relative;
+}
+
+.images {
+	margin-top: 5px;
+	width: 100%;
+	height: 160px;
+	display: flex;
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.img {
+	width: calc(100% / 3);
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.font {
+	font-weight: 600;
+	font-size: 14px;
+	width: calc(100% - 51px);
+	text-wrap: wrap;
+}
+
+.options {
+	position: absolute;
+	width: calc(100% - 32px);
+	border-radius: 12px;
+	padding: 8px;
+	background-color: $primery-color;
+	top: 32px;
+}

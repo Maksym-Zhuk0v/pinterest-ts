@@ -1,0 +1,43 @@
+@import "/src/styles/vars";
+
+.default {
+	background-color: $primery-color;
+	font-size: 17px;
+	font-weight: 600;
+	padding: 16px;
+	border-radius: 24px;
+}
+
+.arrow {
+	margin-left: 10px;
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	border-top: 2px solid #000;
+	border-right: 2px solid #000;
+	transition: all 0.2s;
+}
+
+.options {
+	background-color: $primery-color;
+	position: fixed;
+	padding: 10px;
+	box-shadow: 0 0 5px $shaodw-color-lighter;
+	border-radius: 10px;
+	margin-top: 4px;
+	z-index: 3;
+}
+
+.opt {
+	display: block;
+	color: inherit;
+	font-size: 15px;
+	font-weight: 600;
+	text-align: left;
+	padding: 8px 10px;
+	border-radius: 8px;
+	text-decoration: none;
+	&:hover {
+		background-color: #dadada;
+	}
+}

@@ -1,0 +1,28 @@
+@import "/src/styles/vars";
+
+.main {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: inherit;
+	&:hover {
+		background-color: $shaodw-color-lighter;
+	}
+}
+
+.background {
+	width: 24px;
+	height: 24px;
+	display: flex;
+	border-radius: 50%;
+	background-color: $shaodw-color-lighter;
+	font-size: 12px;
+	font-weight: 600;
+	align-items: center;
+	justify-content: center;
+	color: inherit;
+}

@@ -1,0 +1,27 @@
+.main {
+	margin-top: 10px;
+	height: 140px;
+	overflow: hidden;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.card {
+	height: 120px;
+	position: relative;
+}
+
+.img {
+	border-radius: 12px;
+}
+
+.shadow {
+	position: absolute;
+	border-radius: 12px;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.286);
+}

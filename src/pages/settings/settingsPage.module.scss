@@ -1,0 +1,53 @@
+@import "/src/styles/vars";
+
+.content {
+	width: 480px;
+	margin: 24px auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.sidebar {
+	padding: 12px;
+	width: 240px;
+	background-color: $primery-color;
+	@media screen and (max-width: $tablet-width) {
+		display: none;
+	}
+	&.active {
+		display: block;
+		position: absolute;
+	}
+}
+
+.main {
+	max-width: 100%;
+	display: flex;
+	position: relative;
+	margin-bottom: 80px;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: $primery-color;
+	box-shadow: 0 0 5px $shaodw-color-lighter;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+}
+
+.burger {
+	display: none;
+	position: absolute;
+	right: 16px;
+	top: 16px;
+	z-index: 2;
+	@media screen and (max-width: $tablet-width) {
+		display: block;
+	}
+}

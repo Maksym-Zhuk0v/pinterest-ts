@@ -1,0 +1,48 @@
+@import "/src/styles/vars";
+
+.letter {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $silver-color;
+	font-size: 36px;
+	font-weight: 500;
+}
+
+.btn {
+	padding: 12px;
+	background-color: $silver-color;
+	font-size: 18px;
+	font-weight: 500;
+	border-radius: 21px;
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+	&:hover {
+		background-color: $silver-darken-color;
+	}
+}
+
+.select {
+	display: flex;
+	margin-top: 32px;
+	gap: 16px;
+}
+
+.background {
+	margin-left: -22px;
+	height: 200px;
+	width: 60px;
+	border: 2px solid $primery-color;
+	border-top-right-radius: 22px;
+	border-bottom-right-radius: 22px;
+	background-color: $silver-darken-color;
+}
+
+.outlet {
+	max-width: 760px;
+	margin: 40px auto;
+}

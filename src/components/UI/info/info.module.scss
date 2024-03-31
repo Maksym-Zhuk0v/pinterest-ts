@@ -1,0 +1,79 @@
+@import "/src/styles/vars";
+
+.main {
+	width: 34px;
+	height: 48px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.icon {
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&:hover {
+		background-color: $silver-color;
+	}
+}
+
+.arrow {
+	display: block;
+	width: 8px;
+	height: 8px;
+	border-top: 3px solid #ccc;
+	border-right: 3px solid #ccc;
+	border-radius: 2px;
+	transform: rotate(135deg);
+}
+
+.info {
+	display: flex;
+	gap: 12px;
+	padding: 8px;
+	text-decoration: none;
+	color: inherit;
+	border-radius: 8px;
+	&:hover {
+		background-color: $silver-color;
+	}
+}
+
+.modal {
+	width: 330px;
+	position: fixed;
+	right: 0;
+	top: 80px;
+	padding: 12px;
+	border-radius: 8px;
+	background-color: $primery-color;
+	box-shadow: 0 0 5px $shaodw-color-lighter;
+	z-index: 3;
+}
+
+.infoLetter {
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	font-weight: 500;
+	font-size: 22px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $silver-color;
+}
+
+.infoText {
+	font-size: 14px;
+	font-weight: 300;
+	color: gray;
+}
+
+.text {
+	padding: 6px;
+	font-size: 12px;
+	font-weight: 400;
+}

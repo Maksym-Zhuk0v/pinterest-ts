@@ -1,0 +1,56 @@
+@import "/src/styles/vars";
+
+.main {
+	position: fixed;
+	height: calc(100vh - 98px);
+	width: 330px;
+	right: 0;
+	background-color: $primery-color;
+	padding: 16px;
+	border-radius: 16px;
+	z-index: 3;
+	box-shadow: 0 0 5px$shaodw-color-darken;
+}
+
+.cancel {
+	position: absolute;
+	right: 16px;
+	top: 16px;
+	padding: 4px 12px;
+	background-color: $primery-color;
+	font-size: 14px;
+	font-weight: 600;
+	border-radius: 22px;
+	&:hover {
+		background-color: $shaodw-color-lighter;
+	}
+}
+
+.btns {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	margin-top: 8px;
+}
+
+.btn {
+	height: 50px;
+	cursor: pointer;
+	border-radius: 6px;
+	display: flex;
+	align-items: center;
+	padding: 8px;
+	gap: 8px;
+	&:hover {
+		background-color: $shaodw-color-lighter;
+		transition: all 0.2s;
+	}
+}
+
+.img {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}

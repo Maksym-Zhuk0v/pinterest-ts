@@ -21,6 +21,21 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.scss"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "files": [
+    "src/index.tsx"
+  ],
+  "types": [
+    "node"
+  ],
+  "esModuleInterop": true,
+  "styles": [
+    "src/styles/global.scss"
   ]
 }

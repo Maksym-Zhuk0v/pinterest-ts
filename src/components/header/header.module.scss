@@ -1,0 +1,45 @@
+@import "/src/styles/vars";
+
+.home {
+	display: block;
+	height: 48px;
+	width: 48px;
+	border-radius: 50%;
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("../../icons/pinterest-icon.png");
+	&:hover {
+		background-color: $shaodw-color-lighter;
+	}
+	@media screen and (max-width: $mobile-medium) {
+		display: none;
+	}
+}
+
+.options {
+	width: calc(100% - 32px);
+	overflow-x: auto;
+	white-space: nowrap;
+	height: 80px;
+	padding: 0 16px;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	background-color: $primery-color;
+	z-index: 2;
+	top: 0;
+}
+
+.fullScreen {
+	@media screen and (max-width: $mobile-medium) {
+		display: none;
+	}
+}
+
+.lowScren {
+	display: none;
+	@media screen and (max-width: $mobile-medium) {
+		display: block;
+	}
+}

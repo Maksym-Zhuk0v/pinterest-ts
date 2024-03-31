@@ -1,0 +1,22 @@
+@import "/src/styles/vars";
+
+.main {
+	width: 80%;
+	padding: 12px;
+	box-shadow: 0 0 5px $shaodw-color-lighter;
+	margin: 120px auto;
+	border-radius: 12px;
+}
+
+.title {
+	font-weight: 600;
+	text-align: center;
+}
+
+.input {
+	width: 100%;
+	border-radius: 12px;
+	border: 2px solid $silver-color;
+	padding: 12px;
+	font-size: 18px;
+}

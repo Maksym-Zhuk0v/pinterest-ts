@@ -1,0 +1,48 @@
+@import "/src/styles/vars";
+
+.icons {
+	margin-top: 12px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 7px;
+}
+
+.main {
+	display: flex;
+	text-decoration: none;
+	color: inherit;
+	height: 90px;
+	width: 280px;
+	border-radius: 12px;
+	overflow: hidden;
+	&:hover {
+		background-color: $silver-darken-color;
+	}
+	@media screen and (max-width: $mobile-small) {
+		height: 140px;
+	}
+}
+
+.image {
+	height: 100%;
+	width: 100px;
+	background-size: cover;
+	background-position: center;
+	@media screen and (max-width: $mobile-small) {
+		width: 100%;
+	}
+}
+
+.title {
+	text-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 180px;
+	padding: 0 16px;
+	font-size: 16px;
+	font-weight: 500;
+	@media screen and (max-width: $mobile-small) {
+		display: none;
+	}
+}
